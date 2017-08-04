@@ -1,0 +1,77 @@
+/* GENERAL STYLES */
+*{
+	transition: all .1s ease-in;
+}
+body {
+	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+	background: #3b3f45;
+	border-top: 14px solid #ffffff;
+	border-right: 13px solid #ffffff; 
+	border-bottom: 14px solid #ffffff; 
+	border-left: 13px solid #ffffff; 
+
+}
+
+header,footer {
+	background-color: #4a4f56;
+	color: #eb7e7f;
+	text-align: center;	
+	margin: 0 auto;
+}
+
+h1 {
+	padding-top: 53px;
+	padding-bottom: 18px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+h2 {
+	padding-bottom: 18px;
+	font-size: 17px;
+}
+footer {
+	width: 800px;
+	padding: 26px 0 28px 0;
+	margin-bottom: 126px;
+	font-size: 19px;
+	font-weight: 500;
+}
+.logo{
+	font-size: 24px;
+	color:#111;
+}
+
+ul {
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 800px;
+}
+
+li {
+	padding: 21px 0 23px 17px;
+	display: block;
+	color: #f9f9f9;
+	font-size: 18px;
+}
+
+li:nth-child(odd) {
+	background-color: #88839e;
+}
+
+li:nth-child(even) {
+	background-color: #7a7593;
+}
+
+span {
+	font-size: 12px;
+}
+li:hover {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	background-color: #625e77;
+	border-top-width: solid;
+	border-bottom-width: solid;
+	border-color: white none;
+}
+
