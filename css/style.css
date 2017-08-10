@@ -5,18 +5,19 @@
 body {
 	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
 	background: #3b3f45;
-	border-top: 14px solid #ffffff;
-	border-right: 13px solid #ffffff; 
-	border-bottom: 14px solid #ffffff; 
-	border-left: 13px solid #ffffff; 
+	border-top: 14px solid #fff;
+	border-right: 13px solid #fff; 
+	border-bottom: 14px solid #fff; 
+	border-left: 13px solid #fff; 
+	min-width: 30vw;
 
 }
-
 header,footer {
 	background-color: #4a4f56;
 	color: #eb7e7f;
 	text-align: center;	
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 h1 {
@@ -41,11 +42,17 @@ footer {
 	font-size: 24px;
 	color:#111;
 }
-
+.little:before{
+	content: '(';
+}
+.little:after{
+	content: ')';
+}
 ul {
 	margin: 0 auto;
 	padding: 40px 0;
 	width: 800px;
+	cursor: pointer;
 }
 
 li {
@@ -53,6 +60,8 @@ li {
 	display: block;
 	color: #f9f9f9;
 	font-size: 18px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
 }
 
 li:nth-child(odd) {
@@ -64,7 +73,7 @@ li:nth-child(even) {
 }
 
 span {
-	font-size: 12px;
+	font-size: 18px;
 }
 li:hover {
 	border-top: 2px solid #fff;
@@ -74,4 +83,9 @@ li:hover {
 	border-bottom-width: solid;
 	border-color: white none;
 }
+label :checked ~ span {
+text-decoration: line-through;
 
+}
+small {
+	font-size: 55%;
